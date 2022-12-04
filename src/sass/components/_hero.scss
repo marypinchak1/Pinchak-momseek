@@ -1,4 +1,20 @@
-.hero{
-   height: 458px;
-   background: linear-gradient(102.5deg, #FFF6DA 0%, #FFDEF2 100%);
+.hero {
+  height: 458px;
+  background: linear-gradient(102.5deg, #fff6da 0%, #ffdef2 100%);
+  &__main {
+    margin-top: 160px;
+    &-title {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 1.2;
+    }
+    &-description{
+font-family: 'Raleway';
+
+font-weight: 500;
+font-size: 32px;
+line-height: 1.2;
+    }
+  }
 }
