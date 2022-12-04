@@ -1,7 +1,7 @@
 .header {
   display: flex;
   align-items: center;
-  background: transparent;
+  background: linear-gradient(102.5deg, #fff6da 0%, #ffdef2 100%);
   height: 110px;
   position: fixed;
   width: 100%;
@@ -21,6 +21,15 @@
       text-decoration: none;
       color: black;
       white-space: nowrap;
+      font-family: "Roboto";
+
+      font-size: 14px;
+      &:hover {
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+      }
+
       img {
         width: 12px;
         height: 12px;
@@ -38,6 +47,12 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.2;
+    transition: 0.8s;
+    &:hover {
+      background-color: #0f1a41;
+      color: white;
+      transition: 0.8s;
+    }
   }
   &__button-white {
     border: 2px solid #1e3173;
@@ -45,11 +60,22 @@
     background: transparent;
     color: #1e3173;
     margin-left: 12px;
+    transition: 0.8s;
   }
   &__entrance {
     margin-left: 18px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-family: "Roboto";
+
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.5s;
+    &:hover {
+      font-weight: 800;
+      color: rgb(0, 0, 0);
+      transition: 0.5s;
+    }
     img {
       margin-right: 8px;
     }

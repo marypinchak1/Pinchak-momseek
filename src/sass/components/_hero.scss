@@ -1,6 +1,7 @@
 .hero {
   height: 458px;
   background: linear-gradient(102.5deg, #fff6da 0%, #ffdef2 100%);
+  margin-bottom: 74px;
   &__main {
     margin-top: 160px;
     &-title {
@@ -9,12 +10,58 @@
       font-size: 56px;
       line-height: 1.2;
     }
-    &-description{
-font-family: 'Raleway';
+    &-description {
+      font-family: "Raleway";
 
-font-weight: 500;
-font-size: 32px;
-line-height: 1.2;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+  }
+  &__form {
+    select {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      border-radius: 32px;
+      border: none;
+      appearance: none;
+      padding: 20px 18px;
+      background-image: url(../../img/chevron-down.svg);
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+      margin-right: 2%;
+      font-family: "Roboto";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+    #select-1 {
+      width: 26%;
+      background-position: 93%;
+    }
+    #select-2 {
+      width: 44%;
+      background-position: 97%;
+    }
+    &-button {
+      cursor: pointer;
+      width: 26%;
+      padding: 20px 18px;
+      color: white;
+      background-color: #1e3173;
+      border-radius: 32px;
+      font-family: "Roboto";
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 1.2;
+      transition: 0.8s;
+      &:hover {
+        background-color: #0f1a41;
+        transition: 0.8s;
+      }
     }
   }
 }
