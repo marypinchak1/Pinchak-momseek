@@ -27,8 +27,7 @@
       border-radius: 32px;
       border: none;
       appearance: none;
-      
-      
+
       background-color: #ffffff;
       background-repeat: no-repeat;
       margin-right: 2%;
@@ -47,7 +46,8 @@
     #select-2 {
       padding: 20px 50px;
       width: 44%;
-      background-image: url(../../img/chevron-down.svg), url(../../img/location.svg);
+      background-image: url(../../img/chevron-down.svg),
+        url(../../img/location.svg);
       background-position: 97%, 3%;
     }
     &-button {
@@ -185,7 +185,7 @@
       color: #000000;
       background-color: #ffffff;
     }
-    &:hover .for-nanny__item-description{
+    &:hover .for-nanny__item-description {
       color: #1e3173;
     }
     &:hover img.hover {
@@ -207,6 +207,20 @@
     top: 20px;
     &.hover {
       display: none;
+    }
+  }
+}
+
+.news {
+  font-family: "Raleway";
+  background: linear-gradient(102.5deg, #fff6da 0%, #ffdef2 100%);
+  padding: 64px 0 48px 0;
+  margin-bottom: 78px;
+  &__block {
+    position: relative;
+    &-title {
+      font-weight: 700;
+      font-size: 48px;
     }
   }
 }

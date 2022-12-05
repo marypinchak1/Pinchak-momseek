@@ -1,4 +1,35 @@
 .footer{
+    font-family: 'Roboto';
     background-color: black;
     color: #fff;
+    padding: 42px 0 54px 0;
+    &__nav{
+        margin-bottom: 22px;
+        ul{
+            li{
+                margin-left: 3%;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    padding: 6px;
+                }
+            }
+        }
+    }
+    &__language{
+        >img{
+            margin-right: 5px;
+            width: 18px;
+            height: 18px;
+            font-size: 16px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            padding: 6px;
+            img{
+                margin-left: 6px;
+            }
+        }
+    }
 }
