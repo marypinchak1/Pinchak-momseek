@@ -1,18 +1,16 @@
 .hero {
+  font-family: "Raleway";
   height: 458px;
   background: linear-gradient(102.5deg, #fff6da 0%, #ffdef2 100%);
   margin-bottom: 74px;
   &__main {
     margin-top: 160px;
     &-title {
-      font-family: "Raleway";
       font-weight: 700;
       font-size: 56px;
       line-height: 1.2;
     }
     &-description {
-      font-family: "Raleway";
-
       font-weight: 500;
       font-size: 32px;
       line-height: 1.2;
@@ -221,6 +219,106 @@
     &-title {
       font-weight: 700;
       font-size: 48px;
+    }
+  }
+  .nav__tabs {
+    .item {
+      font-family: "Roboto";
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 24px;
+      margin: 12px;
+      color: #1e3173;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      transition: 0.8s;
+      &:hover {
+        background-color: #0f1a41;
+        color: #ffffff;
+        transition: 0.8s;
+      }
+      &.active {
+        color: #ffffff;
+        background: #1e3173;
+        border: 1px solid #1e3173;
+        transition: 0.8s;
+      }
+    }
+  }
+  .content__tabs {
+    margin-bottom: 50px;
+    .slick-arrow.control-c {
+      position: absolute;
+      top: -100px;
+      right: 0;
+      z-index: 2;
+      cursor: pointer;
+    }
+    .arrow-prev.control-c {
+      right: 100px;
+    }
+    .arrow-next.control-c {
+      right: 40px;
+    }
+
+    .content {
+      cursor: pointer;
+
+      img {
+        border-radius: 12px;
+        margin: 0 0 26px 0;
+        padding: 0;
+      }
+      &__title {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      &__date {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        color: #aaaaaa;
+      }
+      &__tag-button {
+        background: transparent;
+        border: 1px solid #1e3173;
+        border-radius: 20px;
+        padding: 6px 12px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.1;
+        color: #1e3173;
+        transition: 0.8s;
+        &:hover {
+          background-color: #0f1a41;
+          color: #ffffff;
+          transition: 0.8s;
+        }
+      }
+    }
+  }
+  .button__read-more {
+    padding: 16px 0;
+    width: 30%;
+    border: 2px solid #1e3173;
+    background: transparent;
+    border-radius: 32px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #1e3173;
+    gap: 10px;
+    transition: 0.8s;
+    &:hover {
+      background-color: #0f1a41;
+      color: #ffffff;
+      transition: 0.8s;
     }
   }
 }
