@@ -1,15 +1,19 @@
 <footer class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-4">
+    <div class="row footer__block">
+      <div
+        class="col-12 col-lg-4 d-flex flex-column justify-content-center d-lg-block"
+      >
         <a href="#"
           ><img class="footer__logo mb-3" src="img/logo-white.svg" alt="logo"
         /></a>
-        <p>© 2022 сервіс для пошуку нянь поблизу</p>
+        <p class="d-none d-lg-block footer__service">© 2022 сервіс для пошуку нянь поблизу</p>
       </div>
-      <div class="col-8">
+      <div class="col-12 col-lg-8">
         <nav class="footer__nav">
-          <ul class="d-flex justify-content-end">
+          <ul
+            class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-end"
+          >
             <li><a href="#">Контакти</a></li>
             <li><a href="#">F.A.Q.</a></li>
             <li><a href="#">Блог</a></li>
@@ -19,7 +23,7 @@
           </ul>
         </nav>
         <div
-          class="footer__language d-flex justify-content-end align-items-center"
+          class="footer__language d-flex justify-content-center justify-content-lg-end align-items-center"
         >
           <img
             class="footer__language-globe"
@@ -31,6 +35,9 @@
             <img src="img/triangle-white.svg" alt="triangle" />
           </a>
         </div>
+        <p class="d-flex justify-content-center d-lg-none">
+          © 2022 сервіс для пошуку нянь поблизу
+        </p>
       </div>
     </div>
   </div>

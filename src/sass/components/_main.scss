@@ -1,14 +1,20 @@
 .hero {
   font-family: "Raleway";
-  height: 458px;
+  height: auto;
   background: linear-gradient(102.5deg, #fff6da 0%, #ffdef2 100%);
   margin-bottom: 74px;
   &__main {
-    margin-top: 160px;
+    margin-top: 150px;
+    @media screen and(max-width: 567px) {
+      margin-top: 120px;
+    }
     &-title {
       font-weight: 700;
       font-size: 56px;
       line-height: 1.2;
+      @media screen and(max-width: 567px) {
+        font-size: 52px;
+      }
     }
     &-description {
       font-weight: 500;
@@ -17,6 +23,7 @@
     }
   }
   &__form {
+    margin-bottom: 40px;
     select {
       display: flex;
       justify-content: center;
@@ -25,7 +32,6 @@
       border-radius: 32px;
       border: none;
       appearance: none;
-
       background-color: #ffffff;
       background-repeat: no-repeat;
       margin-right: 2%;
@@ -40,6 +46,11 @@
       width: 26%;
       background-image: url(../../img/chevron-down.svg);
       background-position: 93%;
+      @media screen and(max-width: 767px) {
+        width: 100%;
+        background-position: 97%;
+        margin-bottom: 20px;
+      }
     }
     #select-2 {
       padding: 20px 50px;
@@ -47,6 +58,10 @@
       background-image: url(../../img/chevron-down.svg),
         url(../../img/location.svg);
       background-position: 97%, 3%;
+      @media screen and(max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
     &-button {
       cursor: pointer;
@@ -60,6 +75,9 @@
       font-size: 26px;
       line-height: 1.2;
       transition: 0.8s;
+      @media screen and(max-width: 767px) {
+        width: 100%;
+      }
       &:hover {
         background-color: #0f1a41;
         transition: 0.8s;
@@ -77,6 +95,12 @@
   margin: 0 0 100px 0;
   padding: 0;
   position: relative;
+  @media screen and(max-width: 991px) {
+    background-position: 55%;
+  }
+  @media screen and(max-width: 440px) {
+    background-position: 60%;
+  }
   &__gradient {
     height: 100%;
     border-radius: 12px;
@@ -97,6 +121,9 @@
     font-size: 64px;
     color: #ffffff;
     margin-bottom: 120px;
+    @media screen and(max-width: 567px) {
+      font-size: 48px;
+    }
   }
 
   &__item {
@@ -109,9 +136,11 @@
     padding: 18px 38px 18px 20px;
     position: relative;
     cursor: pointer;
+    transition: 0.8s;
     &:hover {
       color: #1e3173;
       background-color: #ffffff;
+      transition: 0.8s;
     }
     &:hover img.hover {
       display: block;
@@ -148,6 +177,13 @@
   margin: 0 0 100px 0;
   padding: 0;
   position: relative;
+  @media screen and(max-width: 1200px) {
+    background-size: 40% 100%, contain;
+  }
+  @media screen and(max-width: 991px) {
+    background-image: none;
+    background-color: #1e3173;
+  }
   &__gradient {
     height: 100%;
     border-radius: 12px;
@@ -168,6 +204,12 @@
     font-size: 64px;
     color: #ffffff;
     margin-bottom: 100px;
+    @media screen and(max-width: 567px) {
+      font-size: 48px;
+    }
+    @media screen and(max-width: 390px) {
+      font-size: 40px;
+    }
   }
 
   &__item {
@@ -179,9 +221,11 @@
     padding: 18px 38px 18px 20px;
     position: relative;
     cursor: pointer;
+    transition: 0.8s;
     &:hover {
       color: #000000;
       background-color: #ffffff;
+      transition: 0.8s;
     }
     &:hover .for-nanny__item-description {
       color: #1e3173;
@@ -219,9 +263,17 @@
     &-title {
       font-weight: 700;
       font-size: 48px;
+      @media screen and(max-width: 576px) {
+        margin-bottom: 30px;
+        font-size: 36px;
+        text-align: center;
+      }
     }
   }
   .nav__tabs {
+    @media screen and(max-width: 576px) {
+      margin-left: 3%;
+    }
     .item {
       font-family: "Roboto";
       font-size: 16px;
@@ -248,6 +300,7 @@
   }
   .content__tabs {
     margin-bottom: 50px;
+
     .slick-arrow.control-c {
       position: absolute;
       top: -100px;
@@ -264,11 +317,19 @@
 
     .content {
       cursor: pointer;
-
+      @media screen and(max-width: 576px) {
+        margin: 5%;
+        padding: 0;
+      }
       img {
+        max-width: 100%;
+        max-height: auto;
         border-radius: 12px;
         margin: 0 0 26px 0;
-        padding: 0;
+        padding-right: 20px;
+        @media screen and(max-width: 576px) {
+          padding: 0;
+        }
       }
       &__title {
         font-weight: 700;
@@ -315,6 +376,127 @@
     color: #1e3173;
     gap: 10px;
     transition: 0.8s;
+    @media screen and(max-width: 991px) {
+      width: 50%;
+      font-size: 18px;
+    }
+    @media screen and(max-width: 567px) {
+      font-size: 14px;
+      padding: 8px 4px;
+      width: 70%;
+    }
+    &:hover {
+      background-color: #0f1a41;
+      color: #ffffff;
+      transition: 0.8s;
+    }
+  }
+}
+.community {
+  font-family: "Raleway";
+  margin-bottom: 100px;
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+  &__description {
+    font-size: 24px;
+    margin-bottom: 38px;
+  }
+  &__column {
+    border-top: 3px solid #1e3173;
+    font-family: "Roboto";
+    > p {
+      font-weight: 700;
+      font-size: 28px;
+      padding: 16px 0 24px 0;
+    }
+    > a {
+      text-decoration: none;
+      padding: 5px 0 5px 0;
+      transition: 0.8s;
+      &:hover p{
+        color: #2b4dcb;
+        transition: 0.8s;
+      }
+      span {
+        font-size: 14px;
+        line-height: 1.2;
+        color: #000000;
+      }
+      p {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.2;
+        color: #1e3173;
+        margin-bottom: 34px;
+      }
+    }
+    blockquote {
+      background: #f7f7f7;
+      border-radius: 12px 12px 12px 0px;
+      padding: 12px;
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+  &__discussion {
+    margin-bottom: 46px;
+    &-name {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #1e3173;
+      padding-right: 4px;
+      img {
+        margin-right: 10px;
+      }
+    }
+    span {
+      margin: 0 12px 0 8px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+    &-topic {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #000000;
+    }
+  }
+  &__button {
+    padding: 16px 0;
+    width: 30%;
+    border: 2px solid #1e3173;
+    background: transparent;
+    border-radius: 32px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #1e3173;
+    gap: 10px;
+    transition: 0.8s;
+    @media screen and(max-width: 991px) {
+      width: 50%;
+      font-size: 18px;
+    }
+    @media screen and(max-width: 567px) {
+      font-size: 14px;
+      padding: 8px 4px;
+      width: 70%;
+    }
     &:hover {
       background-color: #0f1a41;
       color: #ffffff;

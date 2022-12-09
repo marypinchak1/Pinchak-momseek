@@ -5,7 +5,7 @@
         <a href="#"
           ><img class="header__logo" src="img/logo.svg" alt="logo"
         /></a>
-        <div class="header__language d-flex align-items-center">
+        <div class="header__language d-none d-lg-flex align-items-center">
           <img
             class="header__language-globe"
             src="img/globe-lang.svg"
@@ -18,12 +18,24 @@
         </div>
       </div>
       <div class="col-7 d-flex align-items-center justify-content-end">
-        <button class="header__button" type="button">
-          Розмістити оголошення
+        <button class="header__button d-none d-sm-block" type="button">
+          <span>Розмістити оголошення</span>
         </button>
-        <button class="header__button header__button-white" type="button">
-          Знайти роботу
+        <a href="#"
+          ><img class="d-block d-sm-none me-2" src="../img/plus.svg" alt="plus"
+        /></a>
+        <button
+          class="header__button header__button-white d-none d-sm-block"
+          type="button"
+        >
+          <span>Знайти роботу</span>
         </button>
+        <a href="#"
+          ><img
+            class="d-block d-sm-none"
+            src="../img/looking.svg"
+            alt="looking"
+        /></a>
         <a class="header__entrance" href="#">
           <img src="img/unlock.svg" alt="" /> <span>Увійти</span>
         </a>

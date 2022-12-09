@@ -1,35 +1,71 @@
-.footer{
-    font-family: 'Roboto';
-    background-color: black;
-    color: #fff;
-    padding: 42px 0 54px 0;
-    &__nav{
-        margin-bottom: 22px;
-        ul{
-            li{
-                margin-left: 3%;
-                a{
-                    text-decoration: none;
-                    color: #fff;
-                    padding: 6px;
-                }
-            }
-        }
+.footer {
+  font-family: "Roboto";
+  background-color: black;
+  color: #fff;
+  padding: 42px 0 54px 0;
+  &__block {
+    a {
+      @media screen and(max-width: 992px) {
+        display: flex;
+        justify-content: center;
+      }
     }
-    &__language{
-        >img{
-            margin-right: 5px;
-            width: 18px;
-            height: 18px;
-            font-size: 16px;
-        }
-        a{
-            text-decoration: none;
-            color: #fff;
-            padding: 6px;
-            img{
-                margin-left: 6px;
-            }
-        }
+    p {
+      white-space: nowrap;
     }
+  }
+
+  &__nav {
+    margin-bottom: 22px;
+    @media screen and(max-width: 992px) {
+      margin-bottom: 12px;
+    }
+    ul {
+      li {
+        margin-left: 2%;
+        @media screen and(max-width: 992px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 4px;
+        }
+        a {
+          text-decoration: none;
+          color: #fff;
+          padding: 12px;
+          white-space: nowrap;
+          &:hover {
+            font-weight: 500;
+          }
+          @media screen and(max-width: 992px) {
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  &__language {
+    @media screen and(max-width: 992px) {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    > img {
+      margin-right: 5px;
+      width: 18px;
+      height: 18px;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 6px;
+      &:hover {
+        font-weight: 500;
+      }
+      img {
+        margin-left: 6px;
+      }
+    }
+  }
 }
